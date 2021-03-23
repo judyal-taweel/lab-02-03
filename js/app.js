@@ -21,6 +21,19 @@ Horns.prototype.render = function () {
   $('main').append(dataClone);
 };
 
+
+Horns.prototype.render2 = function () {
+    let newOption = $('<option></option>').text(this.keyword);
+    $('select').append(newOption);
+    let dataClone = $('#photo-template').clone();
+    dataClone.find('h2').text(this.title);
+    dataClone.find('img').attr('src', this.image);
+    dataClone.find('p').text(this.description);
+    dataClone.attr('class', this.keyword);
+    dataClone.attr('id', this.keyword);
+    $('main').append(dataClone);
+  };
+
 const ajaxSettings = {
   method: 'get',
   dataType: 'json'
@@ -33,6 +46,13 @@ $.ajax('data/page-1.json', ajaxSettings).then((data) => {
   });
 });
 
+$.ajax('data/page-2.json', ajaxSettings).then((data) => {
+    data.forEach(Element => {
+      let newAnimal = new Horns(Element);
+      newAnimal.render2();
+    });
+  });
+
 $(document).ready(function(){
   $('select').on('change', function(){
     let selected = this.value;
@@ -41,3 +61,13 @@ $(document).ready(function(){
     $(`.${selected}`).show();
   });
 });
+
+
+Horns.prototype.toHtml = function() {
+
+    let template = $('#mustache-template').html();
+
+    console.log(template);
+    let html = Mustache.render(template, this);
+    return html;
+}
