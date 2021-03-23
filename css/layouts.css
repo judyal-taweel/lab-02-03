@@ -1,0 +1,14 @@
+header{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+select{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(250, 128, 114, 0.555);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
