@@ -1,8 +1,9 @@
 header{
-    background-color: blanchedalmond;
+    background-color: rgb(202, 144, 56);
     padding: 100px;
     text-align: center;
     font-family: 'Anton', sans-serif;
+    font-size: 40px;
 }
 
 #dataLlist{
@@ -10,16 +11,15 @@ header{
     flex-wrap: wrap;
 }
  #dataLlist div{
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     margin: 20px;
     border: 2px solid black;
     text-align: center;
-    background-color:blanchedalmond;
 }
 footer{
     clear: both;
-    background-color: blanchedalmond;
+    background-color: rgb(202, 144, 56);
     padding: 100px;
     text-align: center;
     font-family: 'Anton', sans-serif;

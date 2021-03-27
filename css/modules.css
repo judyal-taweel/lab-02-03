@@ -1,16 +1,34 @@
 div img{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin-left: 30px;
     border-radius: 14px;
 }
 
 div h2{
     font-family: 'Syne Mono', monospace;
+    font-size: 40px;
+    
+}
+div p{
+    font-family: 'Syne Mono', monospace;
+    font-size: 30px;
+
     
 }
 select{
     position: relative;
     top: 20px;
     left: 70px;
+    width: 200px;
+    height: 50px;
+
+}
+option{
+    font-size: 25px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
 }
