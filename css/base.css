@@ -1,9 +1,6 @@
 *{
     box-sizing: border-box;
-
 }
-footer{
-    clear: both;
-    text-align: center;
-    font-size: 20px;
+html{
+    margin: 2%;
 }
